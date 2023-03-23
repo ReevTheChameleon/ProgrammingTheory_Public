@@ -1,0 +1,166 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2395729759204785342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2395729759204785341}
+  - component: {fileID: 2395729759204785315}
+  - component: {fileID: 2395729759204785340}
+  - component: {fileID: 2395729759204785314}
+  m_Layer: 0
+  m_Name: Key
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2395729759204785341
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2395729759204785342}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.18, y: 0.05, z: 2.77}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_Children:
+  - {fileID: 2789398296849152776}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2395729759204785315
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2395729759204785342}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.5, y: 1, z: 3}
+  m_Center: {x: -0.3, y: 0, z: 0}
+--- !u!114 &2395729759204785340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2395729759204785342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf30ef665c54c2342aa92c812e6b7bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rangeEulerYInteractable: {x: -180, y: 180}
+  rangeEulerYLook: {x: -90, y: 90}
+  vBalloonPos: {x: -0.15, y: 1.2, z: 0}
+  tLookTarget: {fileID: 2395729759204785341}
+  lText:
+  - Looks like a key.  Maybe it can unlock a locked door...
+  durationPan: 0.75
+  rangeCamEulerX: {x: 60, y: 60}
+  targetDistanceCamera: 5
+  sfxpfInspect: {fileID: 11400000, guid: 79159d95e6aede74d8e96f917dd00d9c, type: 2}
+  sDlgMessage: What should you do?
+  sDlgBtn1: Collect
+  sDlgBtn2: Leave it
+  bMultiplePick: 0
+  sfxpfPick: {fileID: 11400000, guid: 2fbbaf476f41a464f9bd45d0ab47bb2e, type: 2}
+--- !u!114 &2395729759204785314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2395729759204785342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ebae5b1b72630a448af346a719e931f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lDarkMaterialMap:
+  - renderer: {fileID: 3962818183900561511}
+    indexDarkMaterial: 3
+--- !u!1001 &2395729758252473571
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2395729759204785341}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0305b2aa32f2cb94091ed595003df50b, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0305b2aa32f2cb94091ed595003df50b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0305b2aa32f2cb94091ed595003df50b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0305b2aa32f2cb94091ed595003df50b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0305b2aa32f2cb94091ed595003df50b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0305b2aa32f2cb94091ed595003df50b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0305b2aa32f2cb94091ed595003df50b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0305b2aa32f2cb94091ed595003df50b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0305b2aa32f2cb94091ed595003df50b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0305b2aa32f2cb94091ed595003df50b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0305b2aa32f2cb94091ed595003df50b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0305b2aa32f2cb94091ed595003df50b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9e03c8f7afd9f9c4fbc6e634bc6107ac, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0305b2aa32f2cb94091ed595003df50b, type: 3}
+      propertyPath: m_Name
+      value: key
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0305b2aa32f2cb94091ed595003df50b, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0305b2aa32f2cb94091ed595003df50b, type: 3}
+--- !u!4 &2789398296849152776 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0305b2aa32f2cb94091ed595003df50b, type: 3}
+  m_PrefabInstance: {fileID: 2395729758252473571}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &3962818183900561511 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 0305b2aa32f2cb94091ed595003df50b, type: 3}
+  m_PrefabInstance: {fileID: 2395729758252473571}
+  m_PrefabAsset: {fileID: 0}

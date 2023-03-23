@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9f911cfaade7584582e4709dafa1b04, type: 3}
+  m_Name: LicenseManager
+  m_EditorClassIdentifier: 
+  aAssetLicense:
+  - asset: {fileID: 12800000, guid: 051f914569bf426499d096a5f6053e7f, type: 3}
+    copyrightText: Copyright 2016 The Fredoka Project Authors (https://github.com/hafontia/Fredoka-One)
+    licenseType: SIL Open Font License, Version 1.1
+    licenseURL: http://scripts.sil.org/OFL
+    licenseFile: {fileID: 4900000, guid: 9fddeaebeba66694294273e9351c0c1d, type: 3}
+    note: 
+  - asset: {fileID: 12800000, guid: a5c9762d0484ca348b2fabdde827e4a6, type: 3}
+    copyrightText: Copyright 2016 The Fredoka Project Authors (https://github.com/hafontia/Fredoka-One)
+    licenseType: SIL Open Font License, Version 1.1
+    licenseURL: http://scripts.sil.org/OFL
+    licenseFile: {fileID: 4900000, guid: 9fddeaebeba66694294273e9351c0c1d, type: 3}
+    note: 
+  - asset: {fileID: 12800000, guid: a502d0a9721d721448e5c4552c74a502, type: 3}
+    copyrightText: Copyright (c) 2011, Juan Pablo del Peral (juan@huertatipografica.com.ar)
+    licenseType: SIL Open Font License, Version 1.1
+    licenseURL: http://scripts.sil.org/OFL
+    licenseFile: {fileID: 4900000, guid: 9fddeaebeba66694294273e9351c0c1d, type: 3}
+    note: with Reserved Font Names "Acme"
+  - asset: {fileID: 102900000, guid: 49309db2bc686a14aa5337fc324fd41a, type: 3}
+    copyrightText: "Textures.com, Copyright \xA9 2005 - 2022"
+    licenseType: Proprietary
+    licenseURL: https://www.textures.com/static/terms/TexturesCom%20-%20Terms%20of%20Service%20Rev3-14.pdf
+    licenseFile: {fileID: 102900000, guid: c8c7ca226d5e6da419bfec59de0adbdd, type: 3}
+    note: 
+  - asset: {fileID: 102900000, guid: 140b6cc2ca7a8674dbbce53bcb4f365f, type: 3}
+    copyrightText: "Textures.com, Copyright \xA9 2005 - 2022"
+    licenseType: Proprietary
+    licenseURL: https://www.textures.com/static/terms/TexturesCom%20-%20Terms%20of%20Service%20Rev3-14.pdf
+    licenseFile: {fileID: 102900000, guid: c8c7ca226d5e6da419bfec59de0adbdd, type: 3}
+    note: 
+  - asset: {fileID: 102900000, guid: f87459586ba16304a9a4266aa7d3deaf, type: 3}
+    copyrightText: "Textures.com, Copyright \xA9 2005 - 2022"
+    licenseType: Proprietary
+    licenseURL: https://www.textures.com/static/terms/TexturesCom%20-%20Terms%20of%20Service%20Rev3-14.pdf
+    licenseFile: {fileID: 102900000, guid: c8c7ca226d5e6da419bfec59de0adbdd, type: 3}
+    note: 
+  - asset: {fileID: 102900000, guid: 8ec443464c63462478f37b24a55554c5, type: 3}
+    copyrightText: "Textures.com, Copyright \xA9 2005 - 2022"
+    licenseType: Proprietary
+    licenseURL: https://www.textures.com/static/terms/TexturesCom%20-%20Terms%20of%20Service%20Rev3-14.pdf
+    licenseFile: {fileID: 102900000, guid: c8c7ca226d5e6da419bfec59de0adbdd, type: 3}
+    note: 
+  - asset: {fileID: 102900000, guid: d87a241c6b8af044ba2bcf8f7cd04811, type: 3}
+    copyrightText: "Textures.com, Copyright \xA9 2005 - 2022"
+    licenseType: Proprietary
+    licenseURL: https://www.textures.com/static/terms/TexturesCom%20-%20Terms%20of%20Service%20Rev3-14.pdf
+    licenseFile: {fileID: 102900000, guid: c8c7ca226d5e6da419bfec59de0adbdd, type: 3}
+    note: 
+  - asset: {fileID: 8300000, guid: 21f94dd0059c3a044bd146555e576333, type: 3}
+    copyrightText: 
+    licenseType: Standard Unity Asset Store EULA
+    licenseURL: https://unity.com/legal/as-terms
+    licenseFile: {fileID: 4900000, guid: ab4b915b724bf984cbc7bc742ea5cef8, type: 3}
+    note: Part of "Piano Instrumental Music Loops" asset by alkakrab
+  - asset: {fileID: 8300000, guid: 29f801989b870154ab92222849753fdd, type: 3}
+    copyrightText: 
+    licenseType: Standard Unity Asset Store EULA
+    licenseURL: https://unity.com/legal/as-terms
+    licenseFile: {fileID: 4900000, guid: ab4b915b724bf984cbc7bc742ea5cef8, type: 3}
+    note: Part of "25 Fantasy RPG Game Tracks Music Pack" asset by alkakrab
+  - asset: {fileID: 8300000, guid: 21f94dd0059c3a044bd146555e576333, type: 3}
+    copyrightText: 
+    licenseType: Standard Unity Asset Store EULA
+    licenseURL: https://unity.com/legal/as-terms
+    licenseFile: {fileID: 4900000, guid: ab4b915b724bf984cbc7bc742ea5cef8, type: 3}
+    note: Part of "25 Fantasy RPG Game Tracks Music Pack" asset by alkakrab (alkakrab04@gmail.com)
+  - asset: {fileID: 919132149155446097, guid: cd877cc4d44fd644dad1053769aa7df5, type: 3}
+    copyrightText: "Copyright \xA9 2023 Adobe. All rights reserved."
+    licenseType: Informal (see note)
+    licenseURL: https://helpx.adobe.com/th_en/creative-cloud/faq/mixamo-faq.html
+    licenseFile: {fileID: 0}
+    note: 'There is no license text!
+
+      According to the URL (Updated 22 Dec
+      2021, Viewed 20 Aug 2022),
+
+      "You can use both characters and animations
+      royalty free for personal, commercial, and non-profit projects including:
+
+      Incorporate
+      characters into illustrations and graphic art.
+
+      3D print characters.
+
+      Create
+      films.
+
+      Create video games."'

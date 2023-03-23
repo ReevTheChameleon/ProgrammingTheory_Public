@@ -1,0 +1,46 @@
+Bug List Before Beta Version 0.1
+1) (Fixed) Delay after unlock
+2) (Fixed) Candle into wall
+3) (Fixed) Player start position
+4) (Fixed) Remove start room items
+5) (Fixed Check time step effect
+6) (Fixed) Fix last scene text (Fixed)
+7) (Fixed) Remove Preview Camera (which is not used)
+8) (Partial) Remove cheat key (up/down arrow)
+
+Bug List Before Beta Version 0.4 (WebGL)
+- (Minor) mouse sensitivity depends on whether you go fullscreen or not
+- (Fixed-observing) mouse cursor remains after footer disappears or stop interacting, and clamp mouse look to screen frame
+- (Fixed) position of dialog box depends on whether you go fullscreen or not
+- (Fixed) tok sound is too short
+- (Fixed) position where key icon moves to depends on fullscreen
+- (Fixed) Camera clipping through torch
+- (Fixed) Flask is too transparent
+- (Fixed) Portal shader doesn't look Perlin
+- (Not fixed (browser security limitation)) Sometimes UI does not respond to click the first time (particularly after return from alt+tab)
+- (Minor) underline is long to the left of number 1
+- (Fixed) cursor appear when footer appears, and remains.
+- (Fixed) portal hitbox is too close to digit hitbox, so balloon bugs when player crosses them (maybe reduce portal hitbox)
+- (Fixed) Footstep sound is not audible
+- (Fixed) Credit scene left/right turn model should not be turning
+- (Fixed) After door unlock, Camera does not return to previous distance
+- (Fixed-observing) Remove cheat key (for key gain)
+- (Fixed) Pausing screen popup should have accompanying SFX
+- (Not Fixed (browser autoplay policy limitation)) BGM not starting automatically until user presses something
+- (Fixed) Pressing F during unlock sequence causes the sequence to end
+- (Fixed-observing) Pressing pause while interacting causes cursor to disappear (regression)
+- (Fixed-observing) Pressing pause at interacting end sequence causes mouse look to stop working
+- (Fixed) If player pauses during unlock sequence, the open animation is cancelled and key count is not deducted
+Note: Minor issues are not fixed now, but are taken note of as possible improvement in the future.
+
+Bug List Before Release Version 1.0 (WebGL)
+- (Fixed-observing) Lighting a candle while walking towards the wall sometimes causes it and player to clip through wall
+- (Fixed) Blade rotates backward
+- (Minor (need more study about rendering)) Keyhole sprite flickers as Camera pans
+- (Fixed-observing) Item sometimes does not show up when spawning room
+- (Fixed) Credit scene scrolling texts do not get highlighted
+- (Fixed-observing) Giving up while collecting item will not work and causes the item to disappear, and the Camera will be awkward afterward
+- (Fixed) Light on the candle pile should flicker
+- (Fixed) When paused, the lit candle bar still decreases
+- (Not Fixed (Unity's point light limitation, and somewhat minor)) Light leaks under wall
+- (Fixed-observing) Blades still move when paused

@@ -1,6 +1,6 @@
 Unity Junior Programmer Pathway Final Project: Programming Theory
 ===========================================================================
-Release v1.0  
+Release v1.1  
 by Reev the Chameleon
 
 About
@@ -11,7 +11,13 @@ as part of my studying of how to make a game by Unity. As a final project,
 I intended to make it into a small yet fully playable game.
 It took me quite longer than expected, but here it is!
 I would be happy if you enjoy playing it!
-Please see the release v1.0 of the game
+
+Please view and download the latest release of the game [here](https://github.com/ReevTheChameleon/ProgrammingTheory_Public/releases/latest).  
+Or play on WebGL at [Unity Play](https://play.unity.com/mg/other/1-1-wgzzd) or at [itch.io](https://reevthechameleon.itch.io/3-digit-maze)
+
+Note: Because the game was originally intended to be published on WebGL,
+there is no quit button in Windows version. Please resort to alt+F4 to quit the game
+(for now).
 
 Project Error?
 ---------------------------------------------------------------------------

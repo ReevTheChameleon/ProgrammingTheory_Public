@@ -20,6 +20,7 @@ public class DoorLocked : OptionInspectable{
 
 	[SerializeField] AudioPrefab sfxpfUnlock;
 	[SerializeField] AudioPrefab sfxpfSlide;
+	[SerializeField] Collider cBlocker;
 	AnimationPlayer animPlayerUnlock;
 
 	private TweenRoutineUnit<Quaternion> subitrTurnPlayer;
@@ -142,7 +143,15 @@ public class DoorLocked : OptionInspectable{
 			transform.position,
 			transform.position + new Vector3(0.0f,distanceLift,0.0f)
 		);
+		cBlocker.enabled = false; //prevent Camera jumps when cBlocker lifts off its raycast
 		yield return subitrDoorLift;
+		/* This is a hotfix to prevent failure when giving up while door is lifting.
+		More systematic way is to rearrange LockedDoor GameObject hierarchy so that
+		door mesh becomes a child of trigger which will not lift up. This is too large
+		change that may risk breaking other parts, so we do this simple check for now. */
+		if(PlayerController.Instance.InputMode == eInputMode.Freeze){
+			yield break;}
+		cBlocker.enabled = true;
 		cDoorNone.enabled = true;
 		subitrPanCamera.reset(camInfoStart,subitrPanCamera.End);
 		yield return rfEndInspectSequence();

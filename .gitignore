@@ -61,3 +61,6 @@ crashlytics-build.properties
 /[Aa]ssets/chm_Temp/
 /[Aa]ssets/chm_Temp.meta
 
+# Private ignore
+Private/*
+

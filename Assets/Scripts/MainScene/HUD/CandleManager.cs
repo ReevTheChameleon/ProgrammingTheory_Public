@@ -2,7 +2,6 @@ using UnityEngine;
 using Chameleon;
 using System.Collections;
 using TMPro;
-using UnityEngine.InputSystem; //For testing. Remove later!!
 
 public class CandleManager : LoneMonoBehaviour<CandleManager>{
 	[Header("HUD")]
@@ -139,9 +138,5 @@ public class CandleManager : LoneMonoBehaviour<CandleManager>{
 		}
 		else if(!routineAddLight.IsRunning){
 			this.enabled = false;}
-
-		//Test
-		if(Keyboard.current.upArrowKey.wasPressedThisFrame){
-			addLight(0.3f); }
 	}
 }

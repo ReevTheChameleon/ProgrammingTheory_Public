@@ -517,6 +517,8 @@ MonoBehaviour:
   lText: []
   durationPan: 0.75
   rangeCamEulerX: {x: 0, y: 0}
+  bLimitEulerY: 0
+  rangeCamEulerY: {x: 0, y: 0}
   targetDistanceCamera: 4.5
   sfxpfInspect: {fileID: 0}
 --- !u!1 &4045997703927285011

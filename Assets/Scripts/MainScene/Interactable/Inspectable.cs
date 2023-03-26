@@ -10,6 +10,8 @@ public class Inspectable : Interactable{
 	[Header("Camera Pan")]
 	[SerializeField] protected float durationPan;
 	[SerializeField][WideVector2] protected Vector2 rangeCamEulerX;
+	[SerializeField] protected bool bLimitEulerY;
+	[SerializeField][WideVector2] protected Vector2 rangeCamEulerY;
 	[SerializeField] protected float targetDistanceCamera;
 	[SerializeField] protected AudioPrefab sfxpfInspect;
 
@@ -74,8 +76,17 @@ public class Inspectable : Interactable{
 		subitrPanCamera.End.vCamTarget = tLookTarget.position;
 		subitrPanCamera.Start.qCamTarget = tCamTarget.localRotation;
 		Vector3 eulerCamTarget = tCamTarget.localEulerAngles;
-		Quaternion qCamTargetEnd = Quaternion.Euler(eulerCamTarget.newX(
-			MathfExtension.clamp(Mathf.DeltaAngle(0.0f,eulerCamTarget.x),rangeCamEulerX))
+		Quaternion qCamTargetEnd = Quaternion.Euler(
+			MathfExtension.clamp(Mathf.DeltaAngle(0.0f,eulerCamTarget.x),rangeCamEulerX),
+			bLimitEulerY ?
+				MathfExtension.clampAngleDeg(
+					eulerCamTarget.y,
+					tLookTarget.eulerAngles.y + rangeCamEulerY.x,
+					tLookTarget.eulerAngles.y + rangeCamEulerY.y
+				) :
+				eulerCamTarget.y
+			,
+			eulerCamTarget.z
 		);
 		subitrPanCamera.End.qCamTarget = qCamTargetEnd;
 		subitrPanCamera.Start.camDistance = cameraControl.targetCameraDistance;
@@ -98,6 +109,14 @@ public class Inspectable : Interactable{
 		FooterManager.Instance.hideFooter();
 		FollowConstraint camTargetConstraint = tCamTarget.GetComponent<FollowConstraint>();
 		subitrPanCamera.Start.vCamTarget = camTargetConstraint.TargetPosition;
+		if(bLimitEulerY){
+			/* This keeps Camera's EulerY rather than reverting it */
+			subitrPanCamera.Start.qCamTarget = Quaternion.Euler(
+				subitrPanCamera.End.qCamTarget.eulerAngles.newY(
+					subitrPanCamera.End.qCamTarget.eulerAngles.y));
+			//subitrPanCamera.Start.qCamTarget = subitrPanCamera.Start.qCamTarget.newEulerY(
+			//	subitrPanCamera.End.qCamTarget.eulerAngles.y);
+		}
 		subitrPanCamera.bReverse = true;
 		subitrPanCamera.Reset();
 		yield return subitrPanCamera;

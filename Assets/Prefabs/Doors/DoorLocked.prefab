@@ -68,7 +68,9 @@ MonoBehaviour:
   - This door seems to be <color="red">locked</color>...
   durationPan: 0.75
   rangeCamEulerX: {x: 15, y: 15}
-  targetDistanceCamera: 3
+  bLimitEulerY: 1
+  rangeCamEulerY: {x: -60, y: 60}
+  targetDistanceCamera: 3.5
   sfxpfInspect: {fileID: 11400000, guid: 79159d95e6aede74d8e96f917dd00d9c, type: 2}
   sDlgMessage: What should you do?
   sDlgBtn1: Unlock
@@ -84,6 +86,7 @@ MonoBehaviour:
   tKeyHole: {fileID: 7874861028094586727}
   sfxpfUnlock: {fileID: 11400000, guid: d610d3cab0341144b80444a92ca99e9e, type: 2}
   sfxpfSlide: {fileID: 11400000, guid: 5c4bcfee7b24b0a468344cbd2bb6f2d2, type: 2}
+  cBlocker: {fileID: 8890050671354735729}
 --- !u!114 &8890050669530885458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,7 +204,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8890050671354735728}
   - component: {fileID: 8890050671354735729}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -373,6 +376,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7560976196774185016, guid: 42630f9e6d755d446aaa4c6c3e668037, type: 3}
   m_PrefabInstance: {fileID: 1457072037691141327}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &6336736532948514261 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4884174694172776730, guid: 42630f9e6d755d446aaa4c6c3e668037, type: 3}
+  m_PrefabInstance: {fileID: 1457072037691141327}
+  m_PrefabAsset: {fileID: 0}
 --- !u!23 &787443138121593482 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2221682063423200837, guid: 42630f9e6d755d446aaa4c6c3e668037, type: 3}
@@ -396,10 +404,5 @@ MeshRenderer:
 --- !u!23 &1651491173120727790 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 203727636310128161, guid: 42630f9e6d755d446aaa4c6c3e668037, type: 3}
-  m_PrefabInstance: {fileID: 1457072037691141327}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &6336736532948514261 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 4884174694172776730, guid: 42630f9e6d755d446aaa4c6c3e668037, type: 3}
   m_PrefabInstance: {fileID: 1457072037691141327}
   m_PrefabAsset: {fileID: 0}

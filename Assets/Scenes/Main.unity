@@ -9042,6 +9042,8 @@ MonoBehaviour:
   - This weird arch seems to react to your presence.....
   durationPan: 1
   rangeCamEulerX: {x: 10, y: 10}
+  bLimitEulerY: 0
+  rangeCamEulerY: {x: 0, y: 0}
   targetDistanceCamera: 5
   sfxpfInspect: {fileID: 11400000, guid: 79159d95e6aede74d8e96f917dd00d9c, type: 2}
   sDlgMessage: What should you do?

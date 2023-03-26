@@ -1,6 +1,6 @@
 Unity Junior Programmer Pathway Final Project: Programming Theory
 ===========================================================================
-Release v1.1  
+Release v1.2  
 by Reev the Chameleon
 
 About

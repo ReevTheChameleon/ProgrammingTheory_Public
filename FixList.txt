@@ -43,4 +43,14 @@ Bug List Before Release Version 1.0 (WebGL)
 - (Fixed) Light on the candle pile should flicker
 - (Fixed) When paused, the lit candle bar still decreases
 - (Not Fixed (Unity's point light limitation, and somewhat minor)) Light leaks under wall
-- (Fixed-observing) Blades still move when paused
+- (Fixed) Blades still move when paused
+
+Bug List Before Release Version 1.1
+- (Fixed-observing) Blade goes through doorway when hit its corner
+
+Bug List Before Release Version 1.2
+- (Fixed-partial (ignore occurrence during panning sequence)) Camera clips into wall if was at glancing angle when player interacts with locked door
+- (Fixed) Locked Doors do not block camera
+- (Fixed-observing) Items near doorways show interaction balloons in the dark when coming from lit room
+- (Fixed) Pressing candle cheat key while candle is lit increases candle bar
+- (Fixed-observing) Giving up while unlocking fails and causes Camera to be weird afterward 

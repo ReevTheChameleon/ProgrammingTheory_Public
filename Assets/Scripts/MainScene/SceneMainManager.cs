@@ -177,9 +177,13 @@ public class SceneMainManager : LoneMonoBehaviour<SceneMainManager>{
 	[SerializeField] Vector2 v2PosExitPortal;
 
 	public bool IsCurrentRoomDark{
-		get{ return dictRoomState[roomDigitAsInt(roomDataCurrent.aDigit)].bDark; }
+		get{
+			updateCurrentRoom();
+			return dictRoomState[roomDigitAsInt(roomDataCurrent.aDigit)].bDark;
+		}
 	}
 	public bool hasItemInCurrentRoom(eRoomItem itemType){
+		updateCurrentRoom();
 		List<ItemPlacement> lItem =
 			dictRoomState[roomDigitAsInt(roomDataCurrent.aDigit)].lRoomItem;
 		for(int i=0; i<lItem.Count; ++i){
@@ -207,6 +211,8 @@ public class SceneMainManager : LoneMonoBehaviour<SceneMainManager>{
 		return ((int)angleDeg+389)/60 % 6;
 	}
 	public void updateCurrentRoom(){
+		if(roomDataNeighbor.gRoom == null){
+			return;}
 		Vector3 vPlayerPos = gPlayer.transform.position;
 		//If gRoom is null, let throw, because it should never happen
 		if((vPlayerPos-roomDataCurrent.gRoom.transform.position).sqrMagnitude >
